@@ -19,7 +19,6 @@
 		6AD2790920BCC04D0085BC29 /* TimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2790820BCC04D0085BC29 /* TimelineViewController.m */; };
 		EF2FFC9028612AA300B4F30E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2FFC8F28612AA300B4F30E /* User.m */; };
 		EF2FFC9328612BB200B4F30E /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2FFC9228612BB200B4F30E /* Tweet.m */; };
-		EF2FFC972862314900B4F30E /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF2FFC962862314900B4F30E /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +45,6 @@
 		EF2FFC8F28612AA300B4F30E /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		EF2FFC9128612BB200B4F30E /* Tweet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
 		EF2FFC9228612BB200B4F30E /* Tweet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
-		EF2FFC962862314900B4F30E /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +99,6 @@
 				6AD278E320BC4B970085BC29 /* LaunchScreen.storyboard */,
 				6AD278E620BC4B970085BC29 /* Info.plist */,
 				6AD278E720BC4B970085BC29 /* main.m */,
-				EF2FFC962862314900B4F30E /* Keys.plist */,
 			);
 			path = twitter;
 			sourceTree = "<group>";
@@ -213,7 +210,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2FFC972862314900B4F30E /* Keys.plist in Resources */,
 				6AD278E520BC4B970085BC29 /* LaunchScreen.storyboard in Resources */,
 				6AD278E220BC4B970085BC29 /* Assets.xcassets in Resources */,
 				6AD278E020BC4B950085BC29 /* Main.storyboard in Resources */,
