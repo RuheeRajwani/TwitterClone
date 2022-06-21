@@ -11,11 +11,15 @@
 
 @implementation Tweet
 
+
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
-
+    
     if (self) {
         // Is this a re-tweet?
+        NSDictionary *user = dictionary[@"user"];
+        self.user = [[User alloc] initWithDictionary:user];
         NSDictionary *originalTweet = dictionary[@"retweeted_status"];
         if (originalTweet != nil) {
             NSDictionary *userDictionary = dictionary[@"user"];
@@ -31,8 +35,6 @@
         self.retweetCount = [dictionary[@"retweet_count"] intValue];
         self.retweeted = [dictionary[@"retweeted"] boolValue];
 
-        NSDictionary *user = dictionary[@"user"];
-        self.user = [[User alloc] initWithDictionary:user];
 
         // Format createdAt date string
         NSString *createdAtOriginalString = dictionary[@"created_at"];
@@ -50,7 +52,7 @@
     return self;
 }
 
-(NSMutableArray *)tweetsWithArray:(NSArray *)dictionaries {
++ (NSMutableArray *)tweetsWithArray:(NSArray *)dictionaries {
     NSMutableArray *tweets = [NSMutableArray array];
     for (NSDictionary *dictionary in dictionaries) {
         Tweet *tweet = [[Tweet alloc] initWithDictionary:dictionary];
@@ -58,5 +60,7 @@
     }
     return tweets;
 }
+
+
 
 @end
