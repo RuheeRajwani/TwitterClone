@@ -23,9 +23,9 @@
     //invoke api method
     [[APIManager shared] postStatusWithText:self.tweetTextView.text completion:^(Tweet *tweet, NSError *error) {
         if(error){
-            NSLog(@"%@",error.localizedDescription);
+            NSLog(@"Error composing Tweet: %@", error.localizedDescription);
         }else{
-            //dismiss this controller
+            [self.delegate didTweet:tweet];
             [self dismissViewControllerAnimated:true completion:nil];
             NSLog(@"successfully composed tweet");
         }
