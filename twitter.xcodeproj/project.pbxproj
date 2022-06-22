@@ -21,6 +21,7 @@
 		EF2FFC9328612BB200B4F30E /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2FFC9228612BB200B4F30E /* Tweet.m */; };
 		EF2FFC99286233FA00B4F30E /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF2FFC98286233FA00B4F30E /* Keys.plist */; };
 		EF2FFC9C2862454600B4F30E /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2FFC9B2862454600B4F30E /* TweetCell.m */; };
+		EF2FFC9F2863804300B4F30E /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2FFC9E2863804300B4F30E /* ComposeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,8 @@
 		EF2FFC98286233FA00B4F30E /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		EF2FFC9A2862454600B4F30E /* TweetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
 		EF2FFC9B2862454600B4F30E /* TweetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
+		EF2FFC9D2863804300B4F30E /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		EF2FFC9E2863804300B4F30E /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 				6AD2790520BCC0380085BC29 /* LoginViewController.m */,
 				6AD2790720BCC04D0085BC29 /* TimelineViewController.h */,
 				6AD2790820BCC04D0085BC29 /* TimelineViewController.m */,
+				EF2FFC9D2863804300B4F30E /* ComposeViewController.h */,
+				EF2FFC9E2863804300B4F30E /* ComposeViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				EF2FFC9C2862454600B4F30E /* TweetCell.m in Sources */,
 				6AD278F320BCA6020085BC29 /* BDBOAuth1SessionManager+SFAuthenticationSession.m in Sources */,
 				EF2FFC9028612AA300B4F30E /* User.m in Sources */,
+				EF2FFC9F2863804300B4F30E /* ComposeViewController.m in Sources */,
 				6AD278E820BC4B970085BC29 /* main.m in Sources */,
 				EF2FFC9328612BB200B4F30E /* Tweet.m in Sources */,
 				6AD2790620BCC0380085BC29 /* LoginViewController.m in Sources */,
