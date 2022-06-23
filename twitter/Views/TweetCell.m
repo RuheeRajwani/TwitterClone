@@ -13,6 +13,7 @@
 
 @implementation TweetCell
 - (IBAction)didTapRetweet:(id)sender {
+    
     if(!self.tweet.retweeted){
         self.tweet.retweeted = YES;
         self.tweet.retweetCount += 1;
@@ -40,7 +41,6 @@
     [self refreshRetweeted];
 }
 - (IBAction)didTapFavorite:(id)sender {
-    //Update the local tweet model
     if(!self.tweet.favorited){
         self.tweet.favorited = YES;
         self.tweet.favoriteCount += 1;
