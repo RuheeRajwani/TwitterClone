@@ -14,6 +14,7 @@
 #import "Tweet.h"
 #import "UIImageView+AFNetworking.h"
 #import "ComposeViewController.h"
+#import "DetailsViewController.h"
 
 @interface TimelineViewController () <ComposeViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 
@@ -67,9 +68,19 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    UINavigationController *navigationController = [segue destinationViewController];
-       ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
-       composeController.delegate = self;
+    if ([[segue identifier] isEqualToString:@"ComposeSegue"]) {
+        UINavigationController *navigationController = [segue destinationViewController];
+           ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
+           composeController.delegate = self;
+    }
+    if ([[segue identifier] isEqualToString:@"DetailsSegue"]) {
+        NSIndexPath *tweetIndexPath = [self.tableView indexPathForCell:sender];
+        Tweet *dataToPass = self.arrayOfTweets[tweetIndexPath.row];
+        DetailsViewController *detailVC = [segue destinationViewController];
+        detailVC.tweet = dataToPass;
+       
+    }
+    
 }
 
 

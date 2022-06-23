@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		EF2FFC99286233FA00B4F30E /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF2FFC98286233FA00B4F30E /* Keys.plist */; };
 		EF2FFC9C2862454600B4F30E /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2FFC9B2862454600B4F30E /* TweetCell.m */; };
 		EF2FFC9F2863804300B4F30E /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2FFC9E2863804300B4F30E /* ComposeViewController.m */; };
+		EF2FFCA22865097C00B4F30E /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2FFCA12865097C00B4F30E /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		EF2FFC9B2862454600B4F30E /* TweetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
 		EF2FFC9D2863804300B4F30E /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
 		EF2FFC9E2863804300B4F30E /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		EF2FFCA02865097C00B4F30E /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		EF2FFCA12865097C00B4F30E /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 				6AD2790720BCC04D0085BC29 /* TimelineViewController.h */,
 				6AD2790820BCC04D0085BC29 /* TimelineViewController.m */,
 				EF2FFC9D2863804300B4F30E /* ComposeViewController.h */,
+				EF2FFCA02865097C00B4F30E /* DetailsViewController.h */,
+				EF2FFCA12865097C00B4F30E /* DetailsViewController.m */,
 				EF2FFC9E2863804300B4F30E /* ComposeViewController.m */,
 			);
 			path = "View Controllers";
@@ -278,6 +283,7 @@
 			files = (
 				EF2FFC9C2862454600B4F30E /* TweetCell.m in Sources */,
 				6AD278F320BCA6020085BC29 /* BDBOAuth1SessionManager+SFAuthenticationSession.m in Sources */,
+				EF2FFCA22865097C00B4F30E /* DetailsViewController.m in Sources */,
 				EF2FFC9028612AA300B4F30E /* User.m in Sources */,
 				EF2FFC9F2863804300B4F30E /* ComposeViewController.m in Sources */,
 				6AD278E820BC4B970085BC29 /* main.m in Sources */,

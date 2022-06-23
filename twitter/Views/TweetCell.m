@@ -81,6 +81,7 @@
     self.username.text= self.tweet.user.screenName;
     self.name.text=  self.tweet.user.name;
     self.date.text=self.tweet.createdAtString;
+    
     NSString *URLString = self.tweet.user.profilePicture;
     NSURL *url = [NSURL URLWithString:URLString];
     [self.profileImage setImageWithURL:url];
