@@ -44,6 +44,7 @@
     [self.tableView insertSubview:self.refreshControl atIndex:0];
     
 }
+
 - (void)fetchTweets{
     [[APIManager shared] getHomeTimelineWithCompletion:^(NSArray *tweets, NSError *error) {
         if (tweets) {
@@ -62,11 +63,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"ComposeSegue"]) {
         UINavigationController *navigationController = [segue destinationViewController];
@@ -83,8 +79,6 @@
     
 }
 
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TweetCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TweetCell" forIndexPath:indexPath];
     cell.tweet = self.arrayOfTweets[indexPath.row];
@@ -100,6 +94,5 @@
     [self.tableView reloadData];
     
 }
-
 
 @end

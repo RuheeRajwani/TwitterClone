@@ -52,8 +52,9 @@ static NSString * const baseURLString = @"https://api.twitter.com";
 
 - (void)getHomeTimelineWithCompletion:(void(^)(NSArray *tweets, NSError *error))completion {
     // Create a GET Request
+    NSDictionary *parameters = @{@"tweet_mode":@"extended"};
     [self GET:@"1.1/statuses/home_timeline.json"
-       parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray *  _Nullable tweetDictionaries) {
+       parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSArray *  _Nullable tweetDictionaries) {
            // Success
            NSMutableArray *tweets = [Tweet tweetsWithArray:tweetDictionaries];
            completion(tweets, nil);
@@ -63,7 +64,6 @@ static NSString * const baseURLString = @"https://api.twitter.com";
     }];
 }
 
-//post Composed Tweet Method
 - (void)postStatusWithText:(NSString *)text completion:(void (^)(Tweet *, NSError *))completion {
     NSString *urlString = @"1.1/statuses/update.json";
     NSDictionary *parameters = @{@"status": text};
@@ -100,7 +100,6 @@ static NSString * const baseURLString = @"https://api.twitter.com";
 
 - (void)retweet:(Tweet *)tweet completion:(void (^)(Tweet *, NSError *))completion {
     NSString *urlString = [NSString stringWithFormat:@"1.1/statuses/retweet/%@.json", tweet.idStr];
-//    NSDictionary *parameters = @{@"id": tweet.idStr};
     [self POST:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable tweetDictionary) {
         Tweet *tweet = [[Tweet alloc]initWithDictionary:tweetDictionary];
         completion(tweet, nil);

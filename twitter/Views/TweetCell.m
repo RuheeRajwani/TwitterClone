@@ -77,7 +77,6 @@
     
     self.tweetText.text = self.tweet.text;
 
-    
     self.username.text= self.tweet.user.screenName;
     self.name.text=  self.tweet.user.name;
     self.date.text=self.tweet.createdAtString;
@@ -110,15 +109,8 @@
     }
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 @end

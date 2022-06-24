@@ -25,24 +25,26 @@
         if (originalTweet != nil) {
             NSDictionary *userDictionary = dictionary[@"user"];
             self.retweetedByUser = [[User alloc] initWithDictionary:userDictionary];
-
-            // Change tweet to original tweet
             dictionary = originalTweet;
         }
         self.idStr = dictionary[@"id_str"];
-        self.text = dictionary[@"text"];
+        
+        if([dictionary valueForKey:@"full_text"] != nil) {
+               self.text = dictionary[@"full_text"]; // uses full text if Twitter API provided it
+           } else {
+               self.text = dictionary[@"text"]; // fallback to regular text that Twitter API provided
+           }
+        
         self.favoriteCount = [dictionary[@"favorite_count"] intValue];
         self.favorited = [dictionary[@"favorited"] boolValue];
         self.retweetCount = [dictionary[@"retweet_count"] intValue];
         self.retweeted = [dictionary[@"retweeted"] boolValue];
 
-
-        // Format createdAt date string
         NSString *createdAtOriginalString = dictionary[@"created_at"];
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        // Configure the input format to parse the date string
+        
         formatter.dateFormat = @"E MMM d HH:mm:ss Z y";
-        // Convert String to Date
+
         NSDate *date = [formatter dateFromString:createdAtOriginalString];
         self.createdAtString = date.shortTimeAgoSinceNow;
     }
@@ -57,7 +59,5 @@
     }
     return tweets;
 }
-
-
 
 @end

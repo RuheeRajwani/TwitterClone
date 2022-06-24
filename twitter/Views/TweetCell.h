@@ -25,9 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) Tweet *tweet;
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
 
-
-
-
 @end
 
 NS_ASSUME_NONNULL_END
