@@ -43,6 +43,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 1. How to reduce code redundancy (detailsViewController and tweetCell)
 2. Generating my own API calls
+3. Auto layout
 
 ## Video Walkthrough
 
@@ -56,7 +57,7 @@ GIF created with [Kap](https://getkap.co/).
 
 Describe any challenges encountered while building the app.
 
-I struggled with understanding some of the logic focused on API calls. I also got confused when trying to take functionality out of the TimelineViewController and putting it into the TweetCell. 
+I struggled with understanding some of the logic focused on API calls. I also got confused when trying to take functionality out of the TimelineViewController and putting it into the TweetCell. I also could not fully implement auto layout. 
 
 ## Credits
 
