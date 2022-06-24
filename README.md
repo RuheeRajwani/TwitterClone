@@ -46,7 +46,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 ## Video Walkthrough
 
-You can find a walkthrough of implemented user stories in the file titled : TwitterWalkthrough.gif (https://getkap.co/)
+You can find a walkthrough of implemented user stories in the file titled : TwitterWalkthrough.gif (https://github.com/RuheeRajwani/TwitterClone/blob/main/TwitterWalkthrough.gif)
 
 <img src='https://submissions.us-east-1.linodeobjects.com/metau_ios/XVFYsT8U.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
