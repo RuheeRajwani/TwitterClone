@@ -57,7 +57,7 @@ GIF created with [Kap](https://getkap.co/).
 
 Describe any challenges encountered while building the app.
 
-I struggled with understanding some of the logic focused on API calls. I also got confused when trying to take functionality out of the TimelineViewController and putting it into the TweetCell. I also could not fully implement auto layout. 
+I struggled with understanding some of the logic focused on API calls. I also got confused when trying to take functionality out of the TimelineViewController and putting it into the TweetCell. I also could not get my details view to scroll.
 
 ## Credits
 
