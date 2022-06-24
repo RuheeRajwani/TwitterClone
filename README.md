@@ -43,7 +43,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 1. How to reduce code redundancy (detailsViewController and tweetCell)
 2. Generating my own API calls
-3. Auto layout
+3. Scroll View
 
 ## Video Walkthrough
 
